@@ -1,0 +1,185 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+.container {
+	max-width: 1400px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 3px;
+}
+
+.form-box form {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 30px;
+	gap: 10px;
+}
+
+
+.modal {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	display: none;
+	width: 500px;
+	height: 900px;
+	background: linear-gradient(180deg, #75757598 10%, #476ab68a 90%);
+	backdrop-filter: blur(10px);
+	transition: 0.7s ease;
+	opacity: 1;
+	padding: 50px 50px;
+	animation-duration: 0.7s;
+	animation-name: modal;
+}
+
+.edit {
+	font-size: 20px;
+	width: 360px;
+	height: 60px;
+}
+
+@keyframes modal {
+	from {
+		right: -600px;
+		opacity: 0
+	}
+
+	to {
+		right: 0;
+		opacity: 1
+	}
+}
+
+@keyframes shadow {
+
+	from {
+		right: 0;
+		opacity: 1
+	}
+
+	to {
+		right: -600px;
+		opacity: 0
+	}
+}
+
+form input {
+	outline: none;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #CBD9E6;
+	width: 200px;
+	font-size: 14px;
+}
+
+form input::placeholder {
+	color: #CBD9E6;
+	font-size: 14px;
+	transition: 0;
+}
+
+form button {
+	border: none;
+	color: white;
+	background: #004dff;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+form button:active {
+	scale: .94;
+	transition: .5s ease;
+}
+
+form div {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	font-size: 14px;
+}
+
+label {
+	color: black !important;
+	font-weight: 500;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	min-height: 80vh;
+}
+
+.wrap-item {
+	width: 100%;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #1a1a1a;
+	font-weight: 500;
+	text-align: center;
+}
+
+.divider {
+	width: 3px;
+	background: #d6d6d6;
+}
+
+.item-box {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.box-item {
+	border: 1px solid #000000;
+	border-radius: 9px;
+	margin: 0 30px;
+	padding: 20px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+.box-item img {
+	width: 60px;
+	height: auto;
+	border: 1px solid #d1caca;
+	border-radius: 50%;
+}
+
+.box-item p {
+	color: #5c5454a6;
+	font-weight: 500;
+}
+
+.name {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.modal input {
+	width: 360px;
+	height: 60px;
+}
+
